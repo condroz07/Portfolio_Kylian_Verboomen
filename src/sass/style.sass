@@ -28,7 +28,7 @@ body, html
   background-position: center
   background-repeat: no-repeat
   background-size: cover
-  background-image: url("../images/nature_landscape_storm_plains_lightning_clouds_overcast_South_Dakota-132395.jpg!d")
+  background-image: url("../img/nature_landscape_storm_plains_lightning_clouds_overcast_South_Dakota-132395.jpg!d")
   min-height: 100%
 
 /* First image (Logo. Full height)
@@ -55,6 +55,115 @@ body, html
 .w3-half > a
   text-decoration: none
 
+h1
+  margin: 0 !important
+
 #about1
   text-align: center
-  background-color: #fff
+  padding-top: 25px
+
+.ancreI 
+  position: fixed
+  text-align: center
+  border-radius: 90%
+  top: 80%
+  right: 6%
+  background: none
+
+
+.ancreI:hover,
+.ancreI:focus 
+  -webkit-animation: pulse 1s
+          animation: pulse 1s
+  box-shadow: 0 0 0 2em transparent
+
+
+@-webkit-keyframes pulse 
+  0% 
+    box-shadow: 0 0 0 0 var(--hover)
+  
+
+
+@keyframes pulse 
+  0% 
+    box-shadow: 0 0 0 0 var(--hover)
+  
+
+
+.ancreI 
+  --color: #6eefd9
+  --hover: blue
+
+
+.button 
+  color: var(--color)
+  transition: 0.25s
+
+
+.button:hover, .button:focus 
+  border-color: var(--hover)
+  color: #fff
+
+.button 
+  width: 48px
+  padding: 15px
+  background: none
+  border: 1px solid
+  font: inherit
+  line-height: 0
+  border-radius: 100%
+
+.rain
+  height: 100vh
+  background-image: url("../img/rain.png")
+  background-attachment: fixed
+  animation: rain 0.3s linear infinite
+
+@keyframes rain
+  0%
+      background-position: 0% 0%
+  
+  100%
+      background-position: 20% 100%
+  
+
+.rain::before
+  content: ""
+  position: absolute
+  width: 100%
+  height: 100%
+  background-image: url("../img/lightining.png")
+  top: 0px
+  transform: rotate(180deg)
+  animation: lightining 4s linear infinite
+  opacity: 1
+
+@keyframes lightining
+  0%
+      opacity: 0
+  
+  20%
+      opacity: 0
+  
+  21%
+      opacity: 1
+  
+  25%
+      opacity: 0
+  
+  30%
+      opacity: 0
+  
+  31%
+      opacity: 1
+  
+
+.about
+  background-color: #949292
+  color: white
+
+.bodyAbout
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  gap: 100px

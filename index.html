@@ -1,51 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://www.w3schools.com/lib/w3.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./public/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://www.w3schools.com/lib/w3.css'>
+  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
 
 </head>
+
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <ul class="w3-navbar" id="myNavbar">
-    <li><a href="#" class="w3-padding-large">Kylian</a></li>
-    <li class="w3-hide-small w3-right">
-      <a href="#contact" class="w3-padding-large">Contact</a>
-    </li>
-    <li class="w3-hide-small w3-right">
-      <a href="#portfolio" class="w3-padding-large">Portfolio</a>
-    </li>
-    <li class="w3-hide-small w3-right">
-      <a href="#about" class="w3-padding-large">About</a>
-    </li>
-  </ul>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-opacity w3-display-container">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Kylian <span class="w3-hide-small">Verboomen</span></h1>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <ul class="w3-navbar" id="myNavbar">
+      <li><a href="#" class="w3-padding-large">Kylian</a></li>
+      <li class="w3-hide-small w3-right">
+        <a href="#contact" class="w3-padding-large">Contact</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#portfolio" class="w3-padding-large">Portfolio</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#about1" class="w3-padding-large">About</a>
+      </li>
+    </ul>
   </div>
-</div>
 
-<!-- About -->
-<div>
-  <div id="about1">
-    <h1>Who i am ?</h1>
-    <p></p>
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-opacity w3-display-container" id="top">
+    <div class="rain"></div>
+    <div class="lightining"></div>
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Kylian <span
+          class="w3-hide-small">Verboomen</span></h1>
+    </div>
   </div>
-  <div>
 
+  <!-- About -->
+  <div class="about">
+    <div id="about1">
+      <h1>ABOUT</h1>
+      <p></p>
+    </div>
+    <div class="bodyAbout">
+      <div>
+        <img src="./public/img/images.jpeg" alt="">
+      </div>
+      <div>
+        <h2>Who i am ?</h2>
+      </div>
+    </div>
   </div>
-</div>
 
-<!-- partial -->
+  <!-- Ancre for remove to the top page -->
+  <a href="#top">
+    <div class="ancreI">
+      <button class="button"><i class="fa-solid fa-angles-up"></i></button>
+    </div>
+  </a>
+
+  <!-- partial -->
   <script src='https://maps.googleapis.com/maps/api/js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script><script  src="./public/js/main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
+  <script src="./public/js/main.js"></script>
 
 </body>
+
 </html>
